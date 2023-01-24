@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+   
+    <title>Calculadora de gosjetas</title>
+</head>
+<body>
+    <div class="calc"> 
+            <h4 class="title">Calculadora de gorjetas</h4>
+        <div class="content"> 
+            <form id="tipsForm">
+                <label for="bill">
+                    <p> Quanto ficou a conta?</p>
+                </label>
+                R$ <input type="number" placeholder="valor da conta" name="bill" id="bill" >
+                <label for="serviceQuality">
+                    <p>Como foi o serviço?</p>
+                </label>
+                <select name="serviceQuality" id="serviceQuality" required>
+                    <option disabled selected>Escolha uma opção</option>
+                    <option value="0.05">5% - Muito Ruim</option>
+                    <option value="0.1">10% - Ruim</option>
+                    <option value="0.15">15% - Aceitável</option>
+                    <option value="0.2">20% - Bom </option>
+                    <option value="0.3">30% - íncrivel</option>
+                </select>
+                <label for="people">
+                    <p>Quantas pessoas vão dividir a conta?</p>
+                </label>
+                <input type="number" placeholder="1" name="people" id="people"> pessoa(s)
+                <br>
+                <button type="submit">Calcular!</button>
+            </form>
+            <div class="showTipsValue" id="showTipsValue">
+                <div id="totalTips">
+                    Total de Gorjeta R$ <span id="tipsvalue"> 0,00</span>
+                </div>
+                <div id="totalEachTips">
+                    Gorjeta por pessoa:  R$ <span id="eachTipsValue"> 0,00 </span>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+            
+    </div>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
